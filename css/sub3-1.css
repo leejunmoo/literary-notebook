@@ -1,0 +1,275 @@
+/* sub3-1.css */
+
+/* main-visual */
+.main-visual-sub1-1 {
+    max-width: 1440px;
+    width: 100%;
+    height: 250px;
+  }
+  
+.main-visual-sub1-1 .sub-title {
+    background-image: url(../images/sub-title/bg_ky_company_biz.9479b51a.jpg);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* sub 공통 LNB */
+.lnb {
+    max-width: 1440px;
+    width: 100%;
+/* background: #ccc; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    padding: 10px;
+}
+
+
+.lnb .lnb-list ul {
+    display: flex;
+    margin-left: 60px;
+    align-items: center;
+    height: 100%;
+}
+
+.lnb .lnb-list ul li {
+    padding: 30px;
+    font-size: 20px;
+}
+
+.lnb .lnb-list ul li a {
+    font-size: 20px;
+    color: #000;
+}
+
+.lnb-list-bold a {
+    padding-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 5px solid #3d3842;
+}
+
+/* 검색바 */
+.wrap .search, .wrap .sort-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 1140px;
+    height: 126px;
+    background-color: rgba(61, 56, 66, 0.1);
+}
+
+.wrap .search .search-select select {
+    width: 150px;
+    height: 45px;
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+.wrap .search .search-bar input {
+    width: 500px;
+    height: 45px;
+    font-size: 20px;
+    display: block;
+}
+
+.wrap .search .search-bar {
+    display: flex;
+}
+
+
+/* 분류창 브랜드 */
+.wrap .sort-brand .sort-brand-list a,
+.wrap .sort-books .sort-books-list a,
+.wrap .sort-books .sort-books-list2 a {
+    font-size: 20px;
+    color: #000;
+}
+
+.wrap .sort-brand .sort-brand-list .bold {
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+
+.wrap .sort-brand .sort-brand-list {
+    display: flex;
+    gap: 100px;
+}
+
+.wrap .sort-books {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1140px;
+    height: 126px;
+    border: 1px solid #3d3842;
+}
+/* 분류창 종류 */
+.wrap .sort-books .sort-books-list .bold,
+.wrap .sort-books .sort-books-list2 .bold {
+    font-weight: 700;
+    color: #488c15;
+}
+
+
+/* .wrap .sort-books {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.wrap .sort-books .sort-books-box {
+    margin-left: 73px;
+}
+
+.wrap .sort-books .sort-books-list,
+.wrap .sort-books .sort-books-list2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap .sort-books .sort-books-list li,
+.wrap .sort-books .sort-books-list2 li {
+    margin-right: 100px;
+}
+
+.wrap .sort-books .sort-books-list {
+    margin-bottom: 20px;
+}
+
+/* 리스트형태 책소개 */
+.wrap .books-list {
+    max-width: 1440px;
+    width: 100%;
+}
+
+/* 정렬방식 style */
+.wrap .books-list-li-style-box {
+    display: none;
+}
+
+.wrap .books-list-check-style-box {
+    display: none;
+}
+
+.wrap .books-list-li-style-box.show {
+    display: block;
+}
+
+.wrap .books-list-check-style-box.show {
+    display: block;
+}
+
+.wrap .books-list .books-list-btn-box { 
+    margin: 100px 150px 0 150px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+/* 리스트형태 스타일 */
+.wrap .books-list .books-list-li-style,
+.wrap .books-list .books-list-check-style {
+    margin: 50px 150px 0 150px;
+}
+
+.wrap .books-list .books-list-li-style li,
+.wrap .books-list .books-list-check-style {
+    margin-bottom: 100px;
+}
+
+.wrap .books-list .books-list-li-style li:hover img,
+.wrap .books-list .books-list-check-style li:hover img {
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 4px 4px 4px #3d3842;
+}
+
+.wrap .books-list .books-list-li-style-box .content h3,
+.wrap .books-list .books-list-check-style-box .content h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+
+/* 바둑스타일 전용  */
+.wrap .books-list .books-list-check-style-box .content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.wrap .books-list .books-list-check-style-box .books-list-check-style {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.wrap .books-list .books-list-check-style-box .content .content-text {
+    text-align: center;
+}
+
+.wrap .books-list .books-list-li-style-box .content h4,
+.wrap .books-list .books-list-check-style-box .content h4 {
+    font-size: 15px;
+    color: #666;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.wrap .books-list .books-list-li-style-box .content p {
+    font-size: 15px;
+}
+
+.wrap .books-list .books-list-li-style-box .content-img  img,
+.wrap .books-list .books-list-check-style-box .content-img  img {
+    height: 400px;
+}
+
+.wrap .books-list .books-list-li-style-box .content {
+    display: flex;
+}
+
+.wrap .books-list .books-list-li-style-box .content .content-text {
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+/* 책소개 숫자번호박스 */
+
+.wrap .books-list .books-list-numberlist-box ul li a .books-list-numberlist-border {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #3d3842;
+    text-align: center;
+}
+
+.wrap .books-list .books-list-numberlist-box ul li a .books-list-numberlist-border span {
+    line-height: 38px;
+    color: #ccc;
+}
+
+.wrap .books-list .books-list-numberlist-box .books-list-numberlist li > a:hover span {
+    color: #488c15;
+}
+
+
+/* 책소개 숫자번호박스 현재페이지일때 */
+.wrap .books-list .books-list-numberlist-box ul li a .books-list-numberlist-border .now-page {
+    color: #488c15;
+}
+
+.wrap .books-list .books-list-numberlist-box .books-list-numberlist {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 100px;
+    
+}
+
