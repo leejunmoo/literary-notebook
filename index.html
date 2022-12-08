@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문학수첩</title>
+    <!-- 제이쿼리 -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <!-- main.js -->
+    <script src="js/main.js"></script>
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header-container">
+            <header class="gnb">
+                <div class="logo">
+                   <a href="#">
+                        <img src="images/logo/logo-black.png" alt="문학수첩">
+                   </a>
+                </div>
+                <div class="menu">
+                    <ul class="depth1">
+                        <li><a href="#">소개</a>
+                            <ul class="depth2">
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">소식</a></li>
+                        <li><a href="#">도서</a>
+                            <ul class="depth2">
+                                <li><a href="#">전체도서</a></li>
+                                <li><a href="#">새로나온 책</a></li>
+                                <li><a href="#">수상 및 선정 도서</a></li>
+                                <li><a href="#">자료실</a></li>
+                                <li><a href="#">작가</a></li>
+                                <li><a href="#">시인 수첩</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">콘텐츠</a>
+                            <ul class="depth2">
+                                <li><a href="#">반연간 문학수첩</a></li>
+                                <li><a href="#">김종철 시인의 집</a></li>
+                                <li><a href="#">이카보그</a></li>
+                                <li><a href="#">해리포터앳홈</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">문의 및 신청</a>
+                            <ul class="depth2">
+                                <li><a href="#">문의</a></li>
+                                <li><a href="#">원고접수</a></li>
+                                <li><a href="#">오탈자 제보</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="site-map">
+                    <a href="#">
+                        <img src="images/icon/사이트맵-icon-black.png" alt="사이트맵">
+                    </a>
+                </div>
+            </header>
+            
+            <!-- 사이트맵 팝업 -->
+            <div id="site-map-menu">
+                <div class="container">
+                    <div class="site-logo">
+                        <a href="">
+                            <img src="/images/logo/logo-black.png" alt="문학수첩">
+                        </a>
+                        <button id="site-menu-close">
+                            <img src="images/icon/close.png" alt="close">
+                        </button>
+                    </div>
+                        <nav class="site-menu">
+                            <ul class="depth1">
+                                <li><a href="#">소개</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">회사소개</a></li>
+                                        <li><a href="#">연혁</a></li>
+                                        <li><a href="#">오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">소식</a></li>
+                                <li><a href="#">도서</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">전체도서</a></li>
+                                        <li><a href="#">새로나온 책</a></li>
+                                        <li><a href="#">수상 및 선정 도서</a></li>
+                                        <li><a href="#">자료실</a></li>
+                                        <li><a href="#">작가</a></li>
+                                        <li><a href="#">시인 수첩</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="depth1-2">
+                                <li><a href="#">콘텐츠</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">반연간 문학수첩</a></li>
+                                        <li><a href="#">김종철 시인의 집</a></li>
+                                        <li><a href="#">이카보그</a></li>
+                                        <li><a href="#">해리포터앳홈</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">문의 및 신청</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">문의</a></li>
+                                        <li><a href="#">원고접수</a></li>
+                                        <li><a href="#">오탈자 제보</a></li>
+                                        <li><a href="#">자주 묻는 질문</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav> 
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- main-banner -->
+        <div class="main-banner">
+            <div class="main-banner-box">
+                <div class="main-banner-text">
+                    <p>시,소설,평론을 아우르는</p>
+                    <p>진정한 종합문예지로 다시 돌아오다</p>
+                    <p>반연간 《문학수첩》 2022년 하반기호 출간</p>
+                </div>
+                <div class="main-banner-img">
+                    <img src="images/main-title/main-title-01-book.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- 베스트셀러 -->
+        <section class="best-book">
+            <h1>베스트셀러</h1>
+            <div class="best-book-list">
+                <img src="images/book-img/베스트셀러/메이즈러너.jpg" alt="메이즈러너">
+                <img src="images/book-img/베스트셀러/오리진.jpg" alt="오리진">
+                <img src="images/book-img/베스트셀러/백핸드발리.jpg" alt="백핸드발리">
+            </div>
+        </section>
+
+        <!-- 새로나온 책 -->
+        <section class="new-book">
+            <h1>새로나온 책</h1>
+            <div class="new-book-list">
+                <img src="images/book-img/새로나온책/신동덤_표지평면.jpg" alt="신동덤">
+                <img src="images/book-img/새로나온책/화성탐사선을탄걸리버_표지띠지.jpg" alt="걸리버">
+                <img src="images/book-img/새로나온책/빙하여-안녕_표지jpg.jpg" alt="빙하여안녕">
+            </div>
+        </section>
+
+        <!-- 공지사항 -->
+        <section class="section-notice">
+            <div class="section-notice-title">
+              <h1>공지사항</h1>
+            </div>
+            <div class="section-notice-menu">
+              <div class="notice-menu">
+                <a href="#">
+                  <h2>반연간 《문학수첩》<br>(2022년 하반기호) 출간</h2>
+                  <h3>
+                    2021년 봄부터 새롭게 탄생한 반연간 문예지 《문학수첩》 
+                    2022년 하반기호(통권 4호)가 출간되었다. 
+                    2003년에 처음 창간하여 2011년부터 2020년 겨울까지 계간 
+                    《시인수첩》의 이름으로 명맥을 이어왔던 문예지 《문학수첩》은 
+                    2021년 3월에 소설 및 산문 중심의 반연간지로 재탄생했고, 
+                    이번 2022년 하반기호부터 문학의 정수인 시(詩)도 함께 안고 가기로
+                    하면서 완전한 종합문예지로 돌아왔다. 그런 의미에서 이번 호는 ‘제4회 〈김종철문학상〉 특집’으로 시작한다. 계간 《문학수첩》과 계간 《시인수첩》을 창간하고 발행하였던 김종철 시인이 본가로 돌아온 것이다.
+                  </h3>
+                  <h4>12월2일</h4>
+                </a>
+                <div class="notice-menu-btn">
+                  <a href="#">계속읽기→</a>
+                </div>
+              </div>
+              <div class="notice-menu">
+                <a href="#">
+                  <h2>해리 포터 무비 스크랩북 : 주문과 마법,
+                    듄 : 메이킹 필름북, 호그와트 입학 세트
+                    재입고 공지</h2>
+                  <h3>
+                    해리가 마법 세계에 들어와서 처음으로 시도한 주문은 무엇이었을까? <해리 포터> 시리즈에서 가장 많이 등장하는 주문과 마법은 무엇일까? 최후의 순간 해리와 볼드모트는 어떤 주문과 마법으로 서로 대적했을까? 이 책은 <해리 포터>의 마법 세계에 등장하는 주문과 마법을 일목요연하게 정리하여 <해리 포터> 시리즈를 보다 흥미진진하게 즐길 수 있는 알찬 정보를 알려주고, 이해의 폭을 넓혀주는 최고의 안내서이다.
+
+                  </h3>
+                  <h4>11월31일</h4>
+                </a>
+                <div class="notice-menu-btn">
+                    <a href="#">계속읽기→</a>
+                </div>
+              </div>
+              <div class="notice-menu">
+                <a href="#">
+                  <h2>새롭게 태어난 인생 판타지! 
+                    해리포터 20주년 개정판 & 일러스트
+                    에디션 출간</h2>
+                  <h3>
+                    국내 출간 20주년을 맞아 《해리 포터》 시리즈가 새롭게 태어났다. 7권 《해리 포터와 죽음의 성물》로 완간된 기존의 《해리 포터》 시리즈는 빈틈없는 소설적 구성과 생생한 캐릭터 그리고 마법 세계를 정교하게 묘사하며 풍부한 상상력이 돋보이면서도 정밀한 세계관을 구축해 나갔다. 하지만 지금까지 출간된 책들은 J.K. 롤링이 펼쳐 나가는 판타지 세계의 규모가 어느 정도이며 그 속에 어떠한 소설적 장치를 심어 놓았는지 알 수 없는 상태에서 번역 작업이 이루어졌다. 또한 1~7편 모두 완결성을 갖추었지만, 시리즈의 특성상 편과 편을 이어 주며 작품 전체를 관통하는 서사의 개연성과 완결성은 마지막 편이 출간된 이후에나 파악할 수밖에 없었다. 그러다 보니 작가가 어느 장면에 복선을 깔아 두었고, 어느 장면이 작가가 창조한 세계관을 이해하는 중요한 역할을 하는지 의미를 파악하며 번역하기에는 한계가 있었다.
+                  </h3>
+                  <h4>11월8일</h4>
+                </a>
+                <div class="notice-menu-btn">
+                    <a href="#">계속읽기→</a>
+                </div>
+              </div>
+              <div class="notice-menu">
+                <a href="#">
+                  <h2>목일신 동시 전집 《산시내》 
+                    KBS 언론보도</h2>
+                  <h3>
+                    [“따르릉 따르릉 비켜나셔요~♩♪”]
+                    맑고 순결한 동심의 세계.
+                    우리말, 우리글로 빚어낸 아름답고 단단한 가사.
+                    [“넓고 넓은 밤하늘에 누가 누가 잠자나~♩♪”]
+                    한국인이라면 한 번쯤은 불러봤을 주옥같은 동요들.
+                    우리 동요의 아버지이자 아동문학의 거목 목일신 시인의 작품입니다.
+                    탄생 108주년이 된 지금도 문학적으로 충분히 평가받지 못한 시인의 주옥같은 동시 160여 편을 엄선해 묶었습니다.
+                    시인의 외손녀와, 시인의 이름을 따 설립한 중학교를 나온 고교생이 고운 삽화를 그려 전집 출간에 의미를 더했습니다.
+                  </h3>
+                  <h4>10월29일</h4>
+                </a>
+                <div class="notice-menu-btn">
+                  <a href="#">계속읽기→</a>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- 블로그 -->
+        <section class="blog">
+            <h1>블로그</h1>
+            <div class="blog-box">
+                <div class="blog-content">
+                    <div class="blog-img">
+                        <img src="images/book-img/blog/크리스마스피그.png" alt="크리스마스피그">
+                    </div>
+                    <div class="blog-text">
+                        <h2>11책방 라이브 방송에 소개된 책 
+                            J.K. 롤링의 《크리스마스 피그》</h2>
+                        <p>
+                            세상을 바꿔 놓을, 어느 소년과 인형의 모험이
+                            시작된다. 다가올 크리스마스에 어떤 책을 
+                            선물하면 좋을지 고민되신다면 주목해 주세요!
+                            🎄📚 오늘 저녁 8시, 11책방 라이브 방송에서
+                            올 한해를 돌아보며 연말 연초에 선물하기
+                            좋은 책들을 소개한다고 합니다!
+                            작년 크리스마스에 많은 사랑을 받은...
+                        </p>
+                        <div class="blog-menu-btn">
+                            <a href="#">보러가기→</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-img">
+                        <img src="images/book-img/blog/미나리마.png" alt="미나리마">
+                    </div>
+                    <div class="blog-text">
+                        <h2>마법 세계 속 멋진 소품들에 대한
+                            정보로 가득한 책 《매직 오브 미나리마》</h2>
+                        <p>
+                            마법 세계 속 멋진 도구와 소품들에 대한
+                            필수 정보로 가득한 책《매직 오브 미나리마》교장님의 책상과도 완벽하게 어울리네요!📜📔
+                            여러분이라면 이 책을 어디에 놓아두시겠어요?
+                            가장 어울리는 장소를 알려주세요 ✨
+                            <하우스 오브 미나리마 파주> 스토어에서,
+                            영화<해리 포터>에서 <신비한 동물사전>...
+                        </p>
+                        <div class="blog-menu-btn">
+                            <a href="#">보러가기→</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-box">
+                <div class="blog-content">
+                    <div class="blog-img">
+                        <img src="images/book-img/blog/해리포터전집.png" alt="해리포터전집">
+                    </div>
+                    <div class="blog-text">
+                        <h2>해리 포터의 계절, 주말엔 
+                            <해리 포터> 시리즈 정주행하기⚡</h2>
+                        <p>
+                            “호그스미드는 꼭 크리스마스카드에 그려진
+                            풍경 같았다. 짚으로 지붕을 이은 작은 집들과
+                            가게들은 온통 파삭파삭한 눈으로 한 겹씩
+                            덮여 있었다. 문에는 호랑가시나무 화환들이
+                            걸려 있고, 나무에는 마법에 걸린 촛불들이
+                            매달려 있었다. 매년 이맘대쯤이면 더 많은 분들이 찾아주시는 <해리 포터> 시리즈♥...
+                        </p>
+                        <div class="blog-menu-btn">
+                            <a href="#">보러가기→</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-img">
+                        <img src="images/book-img/blog/세자매.png" alt="세자매">
+                    </div>
+                    <div class="blog-text">
+                        <h2>[서평단 모집] 주영선 작가의
+                            소설집《세 자매》</h2>
+                        <p>
+                            “우리는 서로 어떤 사이라고 말할 수 있을까”
+                            머뭇거리던 손들이 서로를 스치고 맞잡을 때,
+                            시듦 위로 피어나는 잊었던 이름들에 관한 다섯
+                            편의 이야기✍ 주영선 소설집《세 자매》의
+                            서평단을 모집합니다! 📖 책 소개 주영선의 소설은
+                            애써 잃어버렸거나 힘겹게 놓쳤던 관계의 손끝을
+                            동그랗게 부여잡는 행동에 연루되어 있다. 엄마...
+                        </p>
+                        <div class="blog-menu-btn">
+                            <a href="#">보러가기→</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-text">
+              <p>
+                <a href="#"><span class="footer-bold">개인정보방침</span></a>
+                <span>|</span>
+                <a href="#"><span>이용안내</span></a>
+              </p>
+              <p>
+                <span class="footer-bold">(주)문학수첩</span>
+                <span>경기도 파주시 회동길 503-1 (문발동 633-4)</span><br>
+                <span>Tel. 031-955-9088(대표전화), 031-955-9532(편집부) | Fax. 031-955-9066 | moonhak@moonhak.co.kr</span>
+                <span>Tel : 031-290-8000</span>
+              </p>
+              <p>
+                <span>© Moonhak Soochup. All Rights Reserved.</span>
+              </p>
+            </div>
+            <div class="sns-icon">
+                <a href="#">
+                    <img src="images/icon/facebook-icon.png" alt="페이스북">
+                </a>
+                <a href="#">
+                    <img src="images/icon/ins-icon.png" alt="인스타그램">
+                </a>
+                <a href="#">
+                    <img src="images/icon/twitter-icon.png" alt="트위터">
+                </a>
+                <a href="#">
+                    <img src="images/icon/blog-icon.png" alt="네이버블로그">
+                </a>
+                <a href="#">
+                    <img src="images/icon/cafe-icon.png" alt="네이버카페">
+                </a>
+            </div>
+        
+    </div>
+
+
+
+
+
+
+
+    
+</body>
+</html>
