@@ -5,8 +5,694 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>문학수첩</title>
+    <!-- 제이쿼리 -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <!-- style.css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- sub3-1.css -->
+    <link rel="stylesheet" href="../css/sub3-1.css">
 </head>
 <body>
+    <div class="wrap">
+        <div class="header-container">
+            <header class="gnb">
+                <div class="logo">
+                   <a href="../index.html">
+                        <img src="../images/logo/logo-black.png" alt="문학수첩">
+                   </a>
+                </div>
+                <div class="menu">
+                    <ul class="depth1">
+                        <li><a href="sub1-1.html">소개</a>
+                            <ul class="depth2">
+                                <li><a href="sub1-1.html">회사소개</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">소식</a></li>
+                        <li><a href="sub3-1.html">도서</a>
+                            <ul class="depth2">
+                                <li><a href="sub3-1.html">전체도서</a></li>
+                                <li><a href="#">새로나온 책</a></li>
+                                <li><a href="#">수상 및 선정 도서</a></li>
+                                <li><a href="#">자료실</a></li>
+                                <li><a href="#">작가</a></li>
+                                <li><a href="#">시인 수첩</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">콘텐츠</a>
+                            <ul class="depth2">
+                                <li><a href="#">반연간 문학수첩</a></li>
+                                <li><a href="#">김종철 시인의 집</a></li>
+                                <li><a href="#">이카보그</a></li>
+                                <li><a href="#">해리포터앳홈</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">문의 및 신청</a>
+                            <ul class="depth2">
+                                <li><a href="#">문의</a></li>
+                                <li><a href="#">원고접수</a></li>
+                                <li><a href="#">오탈자 제보</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="site-map">
+                    <a href="#">
+                        <img src="../images/icon/사이트맵-icon-black.png" alt="사이트맵">
+                    </a>
+                </div>
+            </header>
+            
+            <!-- 사이트맵 팝업 -->
+            <div id="site-map-menu">
+                <div class="container">
+                    <div class="site-logo">
+                        <a href="../index.html">
+                            <img src="../images/logo/logo-black.png" alt="문학수첩">
+                        </a>
+                        <button id="site-menu-close">
+                            <img src="../images/icon/close.png" alt="close">
+                        </button>
+                    </div>
+                        <nav class="site-menu">
+                            <ul class="depth1">
+                                <li><a href="sub1-1.html">소개</a>
+                                    <ul class="depth2">
+                                        <li><a href="sub1-1.html">회사소개</a></li>
+                                        <li><a href="#">연혁</a></li>
+                                        <li><a href="#">오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">소식</a></li>
+                                <li><a href="sub3-1.html">도서</a>
+                                    <ul class="depth2">
+                                        <li><a href="sub3-1.html">전체도서</a></li>
+                                        <li><a href="#">새로나온 책</a></li>
+                                        <li><a href="#">수상 및 선정 도서</a></li>
+                                        <li><a href="#">자료실</a></li>
+                                        <li><a href="#">작가</a></li>
+                                        <li><a href="#">시인 수첩</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="depth1-2">
+                                <li><a href="#">콘텐츠</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">반연간 문학수첩</a></li>
+                                        <li><a href="#">김종철 시인의 집</a></li>
+                                        <li><a href="#">이카보그</a></li>
+                                        <li><a href="#">해리포터앳홈</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">문의 및 신청</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">문의</a></li>
+                                        <li><a href="#">원고접수</a></li>
+                                        <li><a href="#">오탈자 제보</a></li>
+                                        <li><a href="#">자주 묻는 질문</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav> 
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- sub 비주얼 -->
+      <div class="main-visual-sub1-1">
+        <div class="sub-title">
+          <h1>도서</h1>
+        </div>
+      </div>
+
+      <!-- LNB -->
+      <div class="lnb">
+        <div class="lnb-list">
+          <ul>
+            <li class="lnb-list-bold">
+              <a href="sub3-1.html">전체도서</a>
+            </li>
+            <li><a href="#">새로나온 책</a></li>
+            <li><a href="#">수상 및 선정 도서</a></li>
+            <li><a href="#">자료실</a></li>
+            <li><a href="#">작가</a></li>
+            <li><a href="#">시인수첩</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 검색바 -->
+      <section class="search">
+        <div class="search-select">
+            <select name="select" id="select">
+                <option value="all">전체</option>
+                <option value="book-name">도서명</option>
+                <option value="brand">브랜드</option>
+                <option value="rightname">저자명</option>
+                <option value="name">역자명</option>
+            </select>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="검색어를 입력하세요" autofocus>
+            <a href="#"><img src="../images/icon/돋보기.png" alt="돋보기"></a>
+        </div>
+      </section>
+
+      <!-- 분류창 -->
+      <section class="sort-brand">
+        <div class="sort-brand-list">
+            <p><a href="#" class="bold">문학수첩</a></p>
+            <p><a href="#">북앤북스</a></p>
+            <p><a href="#">문학수첩리틀북</a></p>
+        </div>
+      </section>
+      
+      <section class="sort-books">
+        <div class="sort-books-box">
+            <ul class="sort-books-list">
+                <li><a href="#" class="bold">전체</a></li>
+                <li><a href="#">국내소설</a></li>
+                <li><a href="#">문예지</a></li>
+                <li><a href="#">국외소설</a></li>
+                <li><a href="#">에세이</a></li>
+                <li><a href="#">예술</a></li>
+            </ul>
+            <ul class="sort-books-list2">
+                <li><a href="#">시집</a></li>
+                <li><a href="#">인문사회</a></li>
+                <li><a href="#">비소설</a></li>
+                <li><a href="#">경제경영</a></li>
+                <li><a href="#">자기계발/실용</a></li>
+            </ul>
+        </div>
+      </section>
+
+
+      <section class="books-list">
+        <div class="books-list-btn-box">
+            <h1>문학수첩</h1>
+            <div class="books-list-btn-icon-box">
+                <a href="#" id="list-style">
+                    <img src="../images/icon/list_black.gif" alt="리스트정렬" id="list-style-icon">
+                </a>
+                <a href="#" id="check-style">
+                    <img src="../images/icon/바둑판.gif" alt="바둑판정렬" id="check-style-icon">
+                </a>
+                <!-- <a href="#">
+                    <img src="../images/icon/list_gray.gif" alt="리스트정렬">
+                </a>
+                <a href="#">
+                    <img src="../images/icon/바둑판_black.gif" alt="바둑판정렬">
+                </a> -->
+            </div>
+        </div>
+        
+        <!-- li 스타일 책소개 -->
+        <div class="books-list-li-style-box show">
+            <ul class="books-list-li-style">
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/마법지팡이세트_표지평면.jpg" alt="마법지팡이세트">
+                            </div>
+                            <div class="content-text">
+                                <h3>마법 지팡이 세트</h3>
+                                <h4>조디 리벤슨 지음 | 공민희 옮김 | 비소설
+                                </h4>
+                                <p>
+                                    〈해리 포터〉 속 마법 지팡이의 모든 것!<br>
+                                    딱총나무 지팡이 키링, 캐릭터 카드 등 다양한 아이템이 가득!<br>
+                                    마법학교 학생들에게 필요한 정보와 아이템으로 가득한 《해리 포터: 호그와트 입학 세트》, 호그와트 기숙사 생활 필수 안내서인<br>
+                                     네 권의 기숙사 세트(《그리핀도르 기숙사 세트》, 《슬리데린 기숙사 세트》, 《래번클로 기숙사 세트》, 《후플푸프 기숙사 세트》 )에 이어,
+                                     〈해리 포터〉 세계 속 마법 지팡이에 관한 모든 것을 담은 《해리 포터: 마법 지팡이 세트》가 출간되었다. 
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/어둠의마법세트_표지평면.jpg" alt="어둠의마법세트">
+                            </div>
+                            <div class="content-text">
+                                <h3>어둠의 마법 세트</h3>
+                                <h4>조디 리벤슨 지음 | 공민희 옮김 | 비소설
+                                </h4>
+                                <p>
+                                    〈해리 포터〉 속 마법 지팡이의 모든 것!<br>
+                                    딱총나무 지팡이 키링, 캐릭터 카드 등 다양한 아이템이 가득!<br>
+                                    마법학교 학생들에게 필요한 정보와 아이템으로 가득한 《해리 포터: 호그와트 입학 세트》, 호그와트 기숙사 생활 필수 안내서인<br>
+                                     네 권의 기숙사 세트(《그리핀도르 기숙사 세트》, 《슬리데린 기숙사 세트》, 《래번클로 기숙사 세트》, 《후플푸프 기숙사 세트》 )에 이어,
+                                     〈해리 포터〉 세계 속 마법 지팡이에 관한 모든 것을 담은 《해리 포터: 마법 지팡이 세트》가 출간되었다. 
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/죽음의-성물-4_후플푸프2.jpg" alt="죽음의성물4-후플푸프">
+                            </div>
+                            <div class="content-text">
+                                <h3>해리 포터와 죽음의 성물 4 : 기숙사 에디션(후플푸프)</h3>
+                                <h4>J.K. 롤링 지음 | 강동혁 옮김 | 국외소설
+                                </h4>
+                                <p>
+                                    해리 포터 vs 어둠의 왕, 선과 악의 마지막 대결이 펼쳐진다! 볼드모트의 영혼이 담긴 마지막 호크룩스의 행방, 죽음의 성물을<br> 둘러싼 비밀은?
+                                    대망의 마지막 이야기 《해리 포터와 죽음의 성물》 기숙사 에디션 출간!<br>
+                                    그리핀도르, 슬리데린, 래번클로, 후플푸프 등, 호그와트 마법학교의 네 기숙사를 상징하는 색깔과 마법 동물을 활용해 화려한 디자인,<br>
+                                    고급스러운 장정으로 재탄생한 《해리 포터》 기숙사 에디션의 일곱 번째이자 마지막 이야기인 《해리 포터와 죽음의 성물》이 출간되었다.
+                                    해리 포터 기숙사 에디션은 영국 《해리 포터와 마법사의 돌》(1997) 최초 출간 20주년을 기념하여 발간된 책이다.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/죽음의-성물-4_슬리데린2.jpg" alt="죽음의성물4-슬리데린">
+                            </div>
+                            <div class="content-text">
+                                <h3>해리 포터와 죽음의 성물 4 : 기숙사 에디션(슬리데린)</h3>
+                                <h4>J.K. 롤링 지음 | 강동혁 옮김 | 국외소설
+                                </h4>
+                                <p>
+                                    해리 포터 vs 어둠의 왕, 선과 악의 마지막 대결이 펼쳐진다! 볼드모트의 영혼이 담긴 마지막 호크룩스의 행방, 죽음의 성물을<br> 둘러싼 비밀은?
+                                    대망의 마지막 이야기 《해리 포터와 죽음의 성물》 기숙사 에디션 출간!<br>
+                                    그리핀도르, 슬리데린, 래번클로, 후플푸프 등, 호그와트 마법학교의 네 기숙사를 상징하는 색깔과 마법 동물을 활용해 화려한 디자인,<br>
+                                    고급스러운 장정으로 재탄생한 《해리 포터》 기숙사 에디션의 일곱 번째이자 마지막 이야기인 《해리 포터와 죽음의 성물》이 출간되었다.
+                                    해리 포터 기숙사 에디션은 영국 《해리 포터와 마법사의 돌》(1997) 최초 출간 20주년을 기념하여 발간된 책이다.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/죽음의-성물-4_래번클로2.jpg" alt="죽음의성물4-래번클로">
+                            </div>
+                            <div class="content-text">
+                                <h3>해리 포터와 죽음의 성물 4 : 기숙사 에디션(래번클로)</h3>
+                                <h4>J.K. 롤링 지음 | 강동혁 옮김 | 국외소설
+                                </h4>
+                                <p>
+                                    해리 포터 vs 어둠의 왕, 선과 악의 마지막 대결이 펼쳐진다! 볼드모트의 영혼이 담긴 마지막 호크룩스의 행방, 죽음의 성물을<br> 둘러싼 비밀은?
+                                    대망의 마지막 이야기 《해리 포터와 죽음의 성물》 기숙사 에디션 출간!<br>
+                                    그리핀도르, 슬리데린, 래번클로, 후플푸프 등, 호그와트 마법학교의 네 기숙사를 상징하는 색깔과 마법 동물을 활용해 화려한 디자인,<br>
+                                    고급스러운 장정으로 재탄생한 《해리 포터》 기숙사 에디션의 일곱 번째이자 마지막 이야기인 《해리 포터와 죽음의 성물》이 출간되었다.
+                                    해리 포터 기숙사 에디션은 영국 《해리 포터와 마법사의 돌》(1997) 최초 출간 20주년을 기념하여 발간된 책이다.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/죽음의-성물-4_그리핀도르2.jpg" alt="죽음의성물4-그리핀도르">
+                            </div>
+                            <div class="content-text">
+                                <h3>해리 포터와 죽음의 성물 4 : 기숙사 에디션(그리핀도르)</h3>
+                                <h4>J.K. 롤링 지음 | 강동혁 옮김 | 국외소설
+                                </h4>
+                                <p>
+                                    해리 포터 vs 어둠의 왕, 선과 악의 마지막 대결이 펼쳐진다! 볼드모트의 영혼이 담긴 마지막 호크룩스의 행방, 죽음의 성물을<br> 둘러싼 비밀은?
+                                    대망의 마지막 이야기 《해리 포터와 죽음의 성물》 기숙사 에디션 출간!<br>
+                                    그리핀도르, 슬리데린, 래번클로, 후플푸프 등, 호그와트 마법학교의 네 기숙사를 상징하는 색깔과 마법 동물을 활용해 화려한 디자인,<br>
+                                    고급스러운 장정으로 재탄생한 《해리 포터》 기숙사 에디션의 일곱 번째이자 마지막 이야기인 《해리 포터와 죽음의 성물》이 출간되었다.
+                                    해리 포터 기숙사 에디션은 영국 《해리 포터와 마법사의 돌》(1997) 최초 출간 20주년을 기념하여 발간된 책이다.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/죽음의-성물-3_후플푸프2.jpg" alt="죽음의성물3-후플푸프">
+                            </div>
+                            <div class="content-text">
+                                <h3>해리 포터와 죽음의 성물 3 : 기숙사 에디션(후플푸프)</h3>
+                                <h4>J.K. 롤링 지음 | 강동혁 옮김 | 국외소설
+                                </h4>
+                                <p>
+                                    해리 포터 vs 어둠의 왕, 선과 악의 마지막 대결이 펼쳐진다! 볼드모트의 영혼이 담긴 마지막 호크룩스의 행방, 죽음의 성물을<br> 둘러싼 비밀은?
+                                    대망의 마지막 이야기 《해리 포터와 죽음의 성물》 기숙사 에디션 출간!<br>
+                                    그리핀도르, 슬리데린, 래번클로, 후플푸프 등, 호그와트 마법학교의 네 기숙사를 상징하는 색깔과 마법 동물을 활용해 화려한 디자인,<br>
+                                    고급스러운 장정으로 재탄생한 《해리 포터》 기숙사 에디션의 일곱 번째이자 마지막 이야기인 《해리 포터와 죽음의 성물》이 출간되었다.
+                                    해리 포터 기숙사 에디션은 영국 《해리 포터와 마법사의 돌》(1997) 최초 출간 20주년을 기념하여 발간된 책이다.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/죽음의-성물-3_슬리데린2.jpg" alt="죽음의성물4-슬리데린">
+                            </div>
+                            <div class="content-text">
+                                <h3>해리 포터와 죽음의 성물 3 : 기숙사 에디션(슬리데린)</h3>
+                                <h4>J.K. 롤링 지음 | 강동혁 옮김 | 국외소설
+                                </h4>
+                                <p>
+                                    해리 포터 vs 어둠의 왕, 선과 악의 마지막 대결이 펼쳐진다! 볼드모트의 영혼이 담긴 마지막 호크룩스의 행방, 죽음의 성물을<br> 둘러싼 비밀은?
+                                    대망의 마지막 이야기 《해리 포터와 죽음의 성물》 기숙사 에디션 출간!<br>
+                                    그리핀도르, 슬리데린, 래번클로, 후플푸프 등, 호그와트 마법학교의 네 기숙사를 상징하는 색깔과 마법 동물을 활용해 화려한 디자인,<br>
+                                    고급스러운 장정으로 재탄생한 《해리 포터》 기숙사 에디션의 일곱 번째이자 마지막 이야기인 《해리 포터와 죽음의 성물》이 출간되었다.
+                                    해리 포터 기숙사 에디션은 영국 《해리 포터와 마법사의 돌》(1997) 최초 출간 20주년을 기념하여 발간된 책이다.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="books-list-check-style-box">
+            <ul class="books-list-check-style">
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/마법지팡이세트_표지평면.jpg" alt="마법지팡이세트">
+                            </div>
+                            <div class="content-text">
+                                <h3>마법 지팡이 세트</h3>
+                                <h4>조디 리벤슨 지음 | 공민희 옮김 | 비소설
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/어둠의마법세트_표지평면.jpg" alt="어둠의마법세트">
+                            </div>
+                            <div class="content-text">
+                                <h3>어둠의 마법 세트</h3>
+                                <h4>조디 리벤슨 지음 | 공민희 옮김 | 비소설
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/죽음의-성물-4_후플푸프2.jpg" alt="죽음의성물4-후플푸프">
+                            </div>
+                            <div class="content-text">
+                                <h3>해리 포터와 죽음의 성물 4<br>
+                                    : 기숙사 에디션(후플푸프)</h3>
+                                <h4>J.K. 롤링 지음 | 강동혁 옮김 | 국외소설
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/죽음의-성물-4_슬리데린2.jpg" alt="죽음의성물4-슬리데린">
+                            </div>
+                            <div class="content-text">
+                                <h3>해리 포터와 죽음의 성물 4<br>
+                                    : 기숙사 에디션(슬리데린)</h3>
+                                <h4>J.K. 롤링 지음 | 강동혁 옮김 | 국외소설
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/죽음의-성물-4_래번클로2.jpg" alt="죽음의성물4-래번클로">
+                            </div>
+                            <div class="content-text">
+                                <h3>해리 포터와 죽음의 성물 4<br>
+                                    : 기숙사 에디션(래번클로)</h3>
+                                <h4>J.K. 롤링 지음 | 강동혁 옮김 | 국외소설
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/죽음의-성물-4_그리핀도르2.jpg" alt="죽음의성물4-그리핀도르">
+                            </div>
+                            <div class="content-text">
+                                <h3>해리 포터와 죽음의 성물 4<br>
+                                    : 기숙사 에디션(그리핀도르)</h3>
+                                <h4>J.K. 롤링 지음 | 강동혁 옮김 | 국외소설
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/죽음의-성물-3_후플푸프2.jpg" alt="죽음의성물3-후플푸프">
+                            </div>
+                            <div class="content-text">
+                                <h3>해리 포터와 죽음의 성물 3<br>
+                                    : 기숙사 에디션(후플푸프)</h3>
+                                <h4>J.K. 롤링 지음 | 강동혁 옮김 | 국외소설
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/죽음의-성물-3_슬리데린2.jpg" alt="죽음의성물3-슬리데린">
+                            </div>
+                            <div class="content-text">
+                                <h3>해리 포터와 죽음의 성물 3<br>
+                                    : 기숙사 에디션(슬리데린)</h3>
+                                <h4>J.K. 롤링 지음 | 강동혁 옮김 | 국외소설
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/죽음의-성물-3_래번클로2.jpg" alt="죽음의성물3-래번클로">
+                            </div>
+                            <div class="content-text">
+                                <h3>해리 포터와 죽음의 성물 3<br>
+                                    : 기숙사 에디션(래번클로)</h3>
+                                <h4>J.K. 롤링 지음 | 강동혁 옮김 | 국외소설
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/죽음의-성물-3_그리핀도르2.jpg" alt="죽음의성물3-슬리데린">
+                            </div>
+                            <div class="content-text">
+                                <h3>해리 포터와 죽음의 성물 3<br>
+                                    : 기숙사 에디션(그리핀도르)</h3>
+                                <h4>J.K. 롤링 지음 | 강동혁 옮김 | 국외소설
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/죽음의-성물-2_후플푸프2.jpg" alt="죽음의성물3-후플푸프">
+                            </div>
+                            <div class="content-text">
+                                <h3>해리 포터와 죽음의 성물 2<br>
+                                    : 기숙사 에디션(후플푸프)</h3>
+                                <h4>J.K. 롤링 지음 | 강동혁 옮김 | 국외소설
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="content">
+                            <div class="content-img">
+                                <img src="../images/book-img/도서2/죽음의-성물-2_슬리데린2.jpg" alt="죽음의성물2-슬리데린">
+                            </div>
+                            <div class="content-text">
+                                <h3>해리 포터와 죽음의 성물 2<br>
+                                    : 기숙사 에디션(슬리데린)</h3>
+                                <h4>J.K. 롤링 지음 | 강동혁 옮김 | 국외소설
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- 책소개 숫자번호박스 -->
+        <div class="books-list-numberlist-box">
+            <ul class="books-list-numberlist">
+                <li>
+                    <a href="#">
+                        <div class="books-list-numberlist-border">
+                            <span class="now-page">1</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="books-list-numberlist-border">
+                            <span>2</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="books-list-numberlist-border">
+                            <span>3</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="books-list-numberlist-border">
+                            <span>4</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="books-list-numberlist-border">
+                            <span>5</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="books-list-numberlist-border">
+                            <span>다음</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+      </section>
+
     
+
+
+
+
+
+
+
+
+
+
+
+       <!-- footer -->
+       <footer>
+        <div class="footer-text">
+          <p>
+            <a href="#"><span class="footer-bold">개인정보방침</span></a>
+            <span>|</span>
+            <a href="#"><span>이용안내</span></a>
+          </p>
+          <p>
+            <span class="footer-bold">(주)문학수첩</span>
+            <span>경기도 파주시 회동길 503-1 (문발동 633-4)</span><br>
+            <span>Tel. 031-955-9088(대표전화), 031-955-9532(편집부) | Fax. 031-955-9066 | moonhak@moonhak.co.kr</span>
+            <span>Tel : 031-290-8000</span>
+          </p>
+          <p>
+            <span>© Moonhak Soochup. All Rights Reserved.</span>
+          </p>
+        </div>
+        <div class="sns-icon">
+            <a href="#">
+                <img src="../images/icon/facebook-icon.png" alt="페이스북">
+            </a>
+            <a href="#">
+                <img src="../images/icon/ins-icon.png" alt="인스타그램">
+            </a>
+            <a href="#">
+                <img src="../images/icon/twitter-icon.png" alt="트위터">
+            </a>
+            <a href="#">
+                <img src="../images/icon/blog-icon.png" alt="네이버블로그">
+            </a>
+            <a href="#">
+                <img src="../images/icon/cafe-icon.png" alt="네이버카페">
+            </a>
+        </div>
+        </footer>
+</div>
+
+
+
+    <!-- up btn -->
+    <div class="upbtn">
+        <a href="#">
+        <i class="fa-solid fa-circle-up"></i>
+        </a>
+    </div>
+
+
+
+
+    <!-- 폰트어썸 -->
+    <script
+    src="https://kit.fontawesome.com/67eff22c15.js"
+    crossorigin="anonymous"
+    ></script>
+    <!-- main.js -->
+    <script src="../js/main.js"></script>
+    <!-- sub3-1.js -->
+    <script src="../js/sub3-1.js"></script>
 </body>
 </html>
