@@ -1,0 +1,109 @@
+/* sub1-1.css */
+.main-visual-sub1-1 {
+    max-width: 1440px;
+    width: 100%;
+    height: 250px;
+  }
+  
+.main-visual-sub1-1 .sub-title {
+    background-image: url(../images/sub-title/bg_ky_company_biz.9479b51a.jpg);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* sub 공통 LNB */
+.lnb {
+    max-width: 1440px;
+    width: 100%;
+/* background: #ccc; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    padding: 10px;
+}
+
+
+.lnb .lnb-list ul {
+    display: flex;
+    margin-left: 60px;
+    align-items: center;
+    height: 100%;
+}
+
+.lnb .lnb-list ul li {
+    padding: 30px;
+    font-size: 20px;
+}
+
+.lnb .lnb-list ul li a {
+    font-size: 20px;
+    color: #000;
+}
+
+.lnb-list-bold a {
+    padding-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 5px solid #3d3842;
+}
+
+/* section 회사소개 */
+
+.wrap .content1 {
+    max-width: 1440px;
+    width: 100%;
+}
+
+.wrap .content1 h1 {
+    font-size: 40px;
+}
+
+.wrap .content1 .content1-text,
+.wrap .content1 .content-brand {
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.wrap .content1 .content1-text P {
+    margin-top: 50px;
+}
+
+.wrap .content1 .content-brand .content-brand-logo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.wrap .content1 .content-brand .brand-moonhak,
+.wrap .content1 .content-brand .brand-books,
+.wrap .content1 .content-brand .brand-littlebook {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.wrap .content1 .content-brand .brand-moonhak-text,
+.wrap .content1 .content-brand .brand-books-text,
+.wrap .content1 .content-brand .brand-littlebook-text {
+    margin-top: 50px;
+}
+
+.wrap .content1 .content-brand .brand-littlebook {
+    margin-bottom: 100px;
+}
+
+.wrap .content1 .content-brand .content-brand-logo > a:first-child:hover {
+    background-color: #488c15;    
+}
+
+.wrap .content1 .content-brand .content-brand-logo > a:nth-child(2):hover {
+    background-color: #592f42;
+}
+
+.wrap .content1 .content-brand .content-brand-logo > a:nth-child(3):hover {
+    background-color: #ffee5b;
+}

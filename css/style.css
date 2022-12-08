@@ -37,7 +37,7 @@ a {
 .wrap .header-container {
     max-width: 1440px;
     width: 100%;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     /* align-items: center; */
     height: 100px;
     position: relative;
@@ -471,6 +471,30 @@ a {
 .wrap .blog .blog-box .blog-content {
     margin-bottom: 60px;
 }
+
+/* ----------upbtn---------- */
+.upbtn {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    width: 0px;
+    height: 0px;
+    font-size: 30px;
+    /* opacity: 0;
+    overflow: hidden;
+    transition: opacity 1s; */
+  }
+  .upbtn.active {
+    height: 30px;
+    width: 30px;
+    opacity: 1;
+  }
+
+  .upbtn a i {
+    color: #3d3842;
+  }
+
+
 
 /* ----------footer---------- */
 footer {
