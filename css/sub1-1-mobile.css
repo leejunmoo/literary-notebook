@@ -1,0 +1,353 @@
+/* sub1-1-mobile.css */
+
+
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.wrap {
+    width: 375px;
+    /* height: 100%; */
+    /* background-color: #ccc; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+
+/* header */
+.wrap .header-container {
+    width: 375px;
+    /* outline: 1px solid red; */
+    /* align-items: center; */
+    height: 100px;
+    position: relative;
+}
+
+/* 모바일 gnb 안보임 */
+
+.wrap .header-container .gnb .menu {
+    display: none;
+}
+
+/* 사이트맵  아이콘 */
+.wrap .header-container .gnb .site-map {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+}
+
+.wrap .header-container .gnb .menu .depth1 li a {
+    color: #000;
+    font-size: 20px;
+}
+
+.wrap .header-container .gnb .menu .depth1 > li > a {
+    margin-right: 100px;
+}
+
+.wrap .header-container .gnb .menu .depth1 li a:hover {
+    color: #488c15;
+}
+
+.wrap .header-container .gnb .menu .depth2 > li > a {
+    display: block;
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+
+
+/* 2단계 메뉴 안보임 */
+.wrap .header-container .gnb .menu .depth2 {
+    margin-top: 40px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+/* 2단계 메뉴 보임 */
+.wrap .header-container .gnb .menu .depth2.show {
+    max-height: 300px;
+    opacity: 1;
+    background-color: #fff;
+    outline: 1px solid #3d3842;
+    transition: 0.7s;
+}
+
+/* 로고 */
+.wrap .header-container .gnb .logo {
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+/* 모바일 sitemap */
+
+#site-map-menu {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    opacity: 0;
+    overflow: hidden;
+    background: #fff;
+    transition: 1s;
+}
+
+#site-map-menu.active {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background-color: #fff;
+    left: 0;
+    top: 100px;
+    opacity: 1;
+    z-index: 1000;
+    border: 1px solid #ccc; 
+}
+
+#site-map-menu .site-logo {
+    display: none;
+}
+
+#site-map-menu .site-logo #site-menu-close {
+    cursor: pointer;
+    background-color: transparent;
+    border-style: none;
+} 
+
+#site-map-menu .site-menu .depth1 > li ,
+#site-map-menu .site-menu .depth1-2 > li {
+    outline: 1px solid #3d3842;
+    padding: 15px 20px;
+}
+
+#site-map-menu .site-menu .depth1 > li > a,
+#site-map-menu .site-menu .depth1-2 > li > a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+#site-map-menu .site-menu .depth1 .depth2,
+#site-map-menu .site-menu .depth1-2 .depth2 {
+    margin-top: 20px;
+}
+
+#site-map-menu .site-menu .depth1 .depth2 > li,
+#site-map-menu .site-menu .depth1-2 .depth2 > li {
+    margin-top: 10px;
+}
+
+#site-map-menu .site-menu .depth1 .depth2 > li > a,
+#site-map-menu .site-menu .depth1-2 .depth2 > li > a {
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.3s;
+    color: #000;
+}
+/* 모바일버전(사이트맵) 2단계메뉴 숨김 */
+
+#site-map-menu .site-menu .depth1 .depth2,
+#site-map-menu .site-menu .depth1-2 .depth2 {
+    display: none;
+}
+/* 모바일버전(사이트맵) 2단계메뉴 보임 */
+#site-map-menu .site-menu .depth1 .depth2.show,
+#site-map-menu .site-menu .depth1-2 .depth2.show {
+    display: block;
+}
+
+
+.main-visual-sub1-1 {
+    max-width: 1440px;
+    width: 100%;
+    height: 250px;
+  }
+  
+.main-visual-sub1-1 .sub-title {
+    background-image: url(../images/sub-title/bg_ky_company_biz.9479b51a.jpg);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* 모바일 sub 공통 LNB */
+.lnb {
+    width: 375px;
+/* background: #ccc; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    height: 114px;
+    padding: 10px;
+}
+
+
+.lnb .lnb-list ul {
+    display: flex;
+    align-items: center;
+}
+
+.lnb .lnb-list ul li {
+    padding: 35px 30px 0 0;
+    font-size: 20px;
+}
+
+.lnb .lnb-list ul li a {
+    font-size: 20px;
+    color: #000;
+}
+
+.lnb-list-bold a {
+    font-weight: bold;
+    border-bottom: 5px solid #3d3842;
+}
+
+/* section 회사소개 */
+
+.wrap .content1 {
+    width: 375px;
+    text-align: center;
+}
+
+.wrap .content1 h1 {
+    font-size: 40px;
+}
+
+.wrap .content1 .content1-text,
+.wrap .content1 .content-brand {
+    margin-top: 100px;
+    padding: 0 40px;
+}
+
+.wrap .content1 .content1-text P {
+    margin-top: 50px;
+}
+
+.wrap .content1 .content-brand .content-brand-logo {
+    display: none;
+}
+
+.wrap .content1 .content-brand .brand-moonhak,
+.wrap .content1 .content-brand .brand-books,
+.wrap .content1 .content-brand .brand-littlebook {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.wrap .content1 .content-brand .brand-moonhak-text,
+.wrap .content1 .content-brand .brand-books-text,
+.wrap .content1 .content-brand .brand-littlebook-text {
+    margin-top: 50px;
+}
+
+.wrap .content1 .content-brand .brand-littlebook {
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------footer---------- */
+footer {
+    width: 375px;
+    height: 306px;
+    background-color: #3d3842;
+    justify-content: center;
+    color: #fff;
+  }
+
+footer .footer-text, footer .sns-icon {
+    text-align: center;
+    align-items: center;
+}
+
+footer .footer-text a {
+    color: #fff;
+}
+
+footer .footer-text  .footer-bold {
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+}
+
+  .footer-text {
+    flex: 3;
+    font-size: 14px;
+    margin-top: 70px;
+    
+  }
+
+  .footer-text p:first-child {
+    margin-bottom: 10px;
+  }
+
+  .footer-text p:nth-child(2) {
+    margin-bottom: 5px;
+  }
+
+
+
+  .footer-bold {
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+
+footer .sns-icon {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+/* ----------upbtn---------- */
+.upbtn {
+    display: none;
+}

@@ -8,7 +8,7 @@
   }
   
 .main-visual-sub1-1 .sub-title {
-    background-image: url(../images/sub-title/bg_ky_company_biz.9479b51a.jpg);
+    background-image: url(../images/sub-title/sub-3-1-title-수정.jpg);
     width: 100%;
     height: 100%;
     color: #fff;
@@ -80,6 +80,15 @@
 
 .wrap .search .search-bar {
     display: flex;
+}
+
+/* 모바일 전용 분류창 pc버전 안보임 */
+.wrap .mobile-select-brand, .wrap .mobile-select-sort {
+    display: none;
+}
+
+.wrap .books-list .books-list-btn-box h1 {
+    font-size: 40px;
 }
 
 
