@@ -14,10 +14,17 @@
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- 모바일용 -->
+    <link 
+    rel="stylesheet" 
+    href="../css/main-mobile.css" 
+    media="screen and (max-width: 767px)">
     <!-- style.css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link 
+    rel="stylesheet" 
+    href="../css/style.css"
+    media="screen and (min-width: 768px)">
 </head>
 <body>
     <div class="wrap">
@@ -86,7 +93,7 @@
                     </div>
                         <nav class="site-menu">
                             <ul class="depth1">
-                                <li><a href="pages/sub1-1.html">소개</a>
+                                <li><a href="#">소개</a>
                                     <ul class="depth2">
                                         <li><a href="pages/sub1-1.html">회사소개</a></li>
                                         <li><a href="#">연혁</a></li>
@@ -94,7 +101,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="#">소식</a></li>
-                                <li><a href="pages/sub3-1.html">도서</a>
+                                <li><a href="#">도서</a>
                                     <ul class="depth2">
                                         <li><a href="pages/sub3-1.html">전체도서</a></li>
                                         <li><a href="#">새로나온 책</a></li>
@@ -131,36 +138,48 @@
 
         <!-- main-banner -->
         <div class="main-banner">
-            <div id="main-banner-box"  class="show">
+          <div class="swiper mySwiperbanner">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
                 <div class="main-banner-text">
-                    <p>시,소설,평론을 아우르는</p>
-                    <p>진정한 종합문예지로 다시 돌아오다</p>
-                    <p>반연간 《문학수첩》 2022년 하반기호 출간</p>
+                  <p>시,소설,평론을 아우르는</p>
+                  <p>진정한 종합문예지로 다시 돌아오다</p>
+                  <p>반연간 《문학수첩》 2022년 하반기호 출간</p>
                 </div>
                 <div class="main-banner-img">
-                    <img src="images/main-title/main-title-01-book.png" alt="">
+                  <img src="images/main-title/main-title-01-book.png" alt="반연간문학수첩">
                 </div>
-            </div>
-            <div id="main-banner-box2">
+              </div>
+              <div class="swiper-slide" 
+              style="background-image: url(../images/main-title/main-titlebg-02.jpg);">
                 <div class="main-banner-text">
-                    <p>제4회 <김종철문학상> 수상자 발표</p>
-                    <p>양애경, 『읽었구나!』(현대시학사, 2021)</p>
+                  <p style="color: #000;">제4회 <김종철문학상> 수상자 발표</p>
+                  <p style="color: #000;">양애경, 『읽었구나!』(현대시학사, 2021)</p>
                 </div>
                 <div class="main-banner-img">
-                    <img src="images/main-title/main-title-02-book.png" alt="">
+                  <img src="images/main-title/main-title-02-book.png" alt="시집">
                 </div>
+              </div>
+              <div class="swiper-slide" 
+              style="background-image: url(../images/main-title/main-titlebg-03.jpg);">
+                <div class="main-banner-text">
+                  <p style="color: #000;">일과 삶이 포개어지는 순간 마주하는 또 다른 나,</p>
+                  <p style="color: #000;">‘일하는 사람’! 다양한 직업인들의</p>
+                  <p style="color: #000;">흥미로운 비하인드 스토리에서들춰 보는 일과 인생의 속성</p>
+              </div>
+              <div class="main-banner-img">
+                <img src="images/main-title/main-title-03-book.png"
+                 alt="일하는사람시리즈">
+               </div>
+              </div>
             </div>
-            <div id="main-banner-box3">
-                <div class="main-banner-text" style="color: #000;">
-                    <p>일과 삶이 포개어지는 순간 마주하는 또 다른 나,</p>
-                    <p>‘일하는 사람’! 다양한 직업인들의</p>
-                    <p>흥미로운 비하인드 스토리에서들춰 보는 일과 인생의 속성</p>
-                </div>
-                <div class="main-banner-img">
-                    <img src="images/main-title/main-title-03-book.png" alt="">
-                </div>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
+        
+        
 
         <!-- 베스트셀러 -->
         <section class="best-book">
@@ -464,7 +483,7 @@
         <footer>
             <div class="footer-text">
               <p>
-                <a href="#"><span class="footer-bold">개인정보방침</span></a>
+                <a href="#" class="footer-mobile"><span class="footer-bold">개인정보방침</span></a>
                 <span>|</span>
                 <a href="#"><span>이용안내</span></a>
               </p>
@@ -472,7 +491,6 @@
                 <span class="footer-bold">(주)문학수첩</span>
                 <span>경기도 파주시 회동길 503-1 (문발동 633-4)</span><br>
                 <span>Tel. 031-955-9088(대표전화), 031-955-9532(편집부) | Fax. 031-955-9066 | moonhak@moonhak.co.kr</span>
-                <span>Tel : 031-290-8000</span>
               </p>
               <p>
                 <span>© Moonhak Soochup. All Rights Reserved.</span>
@@ -513,25 +531,6 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-
     <!-- 폰트어썸 -->
     <script
       src="https://kit.fontawesome.com/67eff22c15.js"
@@ -539,6 +538,8 @@
     ></script>
     <!-- main.js -->
     <script src="js/main.js"></script>
+    <!-- 슬라이더 -->
+    <script src="js/slider.js"></script>
     
 </body>
 </html>
