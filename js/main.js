@@ -31,7 +31,7 @@ let box3El = document.getElementById('main-banner-box3');
 
 
 /* 배너 자동재생 */
-$(function(){
+/* $(function(){
     let bgImg = [
         "../images/main-title/main-titlebg-01.jpg",
         "../images/main-title/main-titlebg-02.jpg",
@@ -52,24 +52,16 @@ $(function(){
 
     },5000);
 
+}); */
 
-   
 
+
+/* 모바일버전 사이트맵 클릭시 2단계메뉴 등장 */
+$(function(){
+    $('.wrap #site-map-menu .site-menu .depth1 > li > a').on('click', function(){
+            $(this).next().toggleClass('show');
+    });
+    $('.wrap #site-map-menu .site-menu .depth1-2 > li > a').on('click', function(){
+            $(this).next().toggleClass('show');
+    })
 });
-
-/* 시간마다 main-banner-box class 추가 */
-/* $(function(){
-    let idx = 0;
-    setInterval(time, 1000);
-    function time(){
-        let box = $('main-banner-box');
-        box.removeClass('show');
-        box.eq(idx).addClass('show');
-        idx++;
-         console.log('실행중');
-        if(idx >= box.length) {
-            idx = 0;
-        };
-    };
-});
- */
