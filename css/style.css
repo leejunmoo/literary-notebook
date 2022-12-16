@@ -50,6 +50,7 @@ a {
     /* align-items: center; */
     height: 100px;
     position: relative;
+    z-index: 999;
 }
 
 .wrap .header-container .gnb .menu .depth1 {
@@ -57,8 +58,9 @@ a {
     text-align: center;
     padding-top: 30px;
     position: absolute;
-    left: 445px;
+    left: 400px;
     top: 3px;
+    white-space: nowrap;
 }
 
 /* .wrap .header-container .gnb .menu .depth1 li:nth-child(1) {
@@ -425,6 +427,11 @@ a {
     align-items: center;
   }
 
+.section-notice .section-notice-menu .notice-menu a h2:hover,
+.section-notice .section-notice-menu .notice-menu .notice-menu-btn a:hover {
+    text-decoration: underline;
+}
+
 /* 블로그 section */
 
 .wrap .blog {
@@ -461,7 +468,8 @@ a {
     transition: 0.3s;
 }
 
-.wrap .blog .blog-box .blog-content .blog-text a > h2:hover {
+.wrap .blog .blog-box .blog-content .blog-text a > h2:hover,
+.wrap .blog .blog-box .blog-content .blog-text .blog-menu-btn a:hover {
     text-decoration: underline;
 }
 
@@ -578,7 +586,6 @@ footer .sns-icon {
 .wrap .main-banner .swiper {
     width: 100%;
     height: 100vh;
-    z-index: -999;
     }
 
 .wrap .main-banner .swiper-wrapper .swiper-slide {

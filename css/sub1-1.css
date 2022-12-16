@@ -99,6 +99,7 @@
 .wrap .content1 .content-brand .content-brand-logo > a:first-child:hover {
     /* background-color: #488c15;     */
     background-color: rgba(0, 0, 0, 0.3);
+   /* border-bottom: 1px solid black; */
 }
 
 .wrap .content1 .content-brand .content-brand-logo > a:nth-child(2):hover {
