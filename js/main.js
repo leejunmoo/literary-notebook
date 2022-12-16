@@ -58,10 +58,10 @@ let box3El = document.getElementById('main-banner-box3');
 
 /* 모바일버전 사이트맵 클릭시 2단계메뉴 등장 */
 $(function(){
-    $('.wrap #site-map-menu .site-menu .depth1 > li > a').on('click', function(){
-            $(this).next().toggleClass('show');
+    $('.wrap #site-map-menu .site-menu .depth1  > li').on('click', function(){
+            $(this).children().toggleClass('show');
     });
-    $('.wrap #site-map-menu .site-menu .depth1-2 > li > a').on('click', function(){
-            $(this).next().toggleClass('show');
+    $('.wrap #site-map-menu .site-menu .depth1-2 > li').on('click', function(){
+            $(this).children().toggleClass('show');
     })
 });
