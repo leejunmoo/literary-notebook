@@ -181,6 +181,16 @@
     border-bottom: 1px solid #d9d9d9;
 }
 
+/* 검색시 검색한것만 나오게 */
+.wrap .books-list .books-list-li-style li a .content.search-show {
+    display: flex;
+}
+
+.wrap .books-list .books-list-li-style li a .content.no-show {
+    display: none;
+}
+
+
 /* 리스트형태 스타일 */
 .wrap .books-list .books-list-li-style,
 .wrap .books-list .books-list-check-style {
