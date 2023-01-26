@@ -160,7 +160,7 @@
       </div>
 
       <!-- 검색바 -->
-      <section class="search">
+      <div class="search">
         <div class="search-select">
             <select name="select" id="select">
                 <option value="all">전체</option>
@@ -171,21 +171,21 @@
             </select>
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="검색어를 입력하세요" autofocus>
-            <a href="#"><img src="../images/icon/돋보기.png" alt="돋보기"></a>
+            <input id="search-in" onkeyup="filter()" type="text" placeholder="검색어를 입력하세요" autofocus>
+            <a href="#" id="search-button"><img src="../images/icon/돋보기.png" alt="돋보기"></a>
         </div>
-      </section>
+      </div>
 
       <!-- 분류창 -->
-      <section class="sort-brand">
+      <div class="sort-brand">
         <div class="sort-brand-list">
             <p><a href="#" class="bold">문학수첩</a></p>
             <p><a href="#">북앤북스</a></p>
             <p><a href="#">문학수첩리틀북</a></p>
         </div>
-      </section>
+      </div>
       
-      <section class="sort-books">
+      <div class="sort-books">
         <div class="sort-books-box">
             <ul class="sort-books-list">
                 <li><a href="#" class="bold">전체</a></li>
@@ -203,21 +203,21 @@
                 <li><a href="#">자기계발/실용</a></li>
             </ul>
         </div>
-      </section>
+      </div>
 
-      <section class="mobile-select-brand">
+      <div class="mobile-select-brand">
         <div class="mobile-select">
-            <select name="select" id="select">
+            <select name="select">
                 <option value="all">전체</option>
                 <option value="notebooks">문학수첩</option>
                 <option value="books">북앤북스</option>
                 <option value="littlebooks">문학수첩리틀북</option>
             </select>
         </div>
-      </section>
-      <section class="mobile-select-sort">
+      </div>
+      <div class="mobile-select-sort">
         <div class="mobile-select">
-            <select name="select" id="select">
+            <select name="select">
                 <option value="all">전체</option>
                 <option value="notebooks">국내소설</option>
                 <option value="books">문예지</option>
@@ -231,7 +231,7 @@
                 <option value="littlebooks">자기계발/실용</option>
             </select>
         </div>
-      </section>
+      </div>
 
 
       <section class="books-list">
@@ -732,5 +732,7 @@
     <script src="../js/main.js"></script>
     <!-- sub3-1.js -->
     <script src="../js/sub3-1.js"></script>
+    <!-- search.js -->
+    <script src="../js/search.js"></script>
 </body>
 </html>
