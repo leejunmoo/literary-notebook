@@ -31,7 +31,8 @@ a {
 }
 
 .wrap {
-    width: 375px;
+    max-width: 100vw;
+    
     /* height: 100%; */
     /* background-color: #ccc; */
     display: flex;
@@ -43,7 +44,8 @@ a {
 
 /* header */
 .wrap .header-container {
-    width: 375px;
+    max-width: 100vw;
+    width: 100%;
     /* outline: 1px solid red; */
     /* align-items: center; */
     height: 100px;
@@ -213,8 +215,7 @@ a {
 
 /* main-banner */
 .wrap .main-banner {
-    width: 375px;
-    height: 304px;
+    width: 100vw;
 }
 
 /* 모바일에서 배너 슬라이더 버튼 안보이게 */
@@ -260,16 +261,10 @@ a {
     margin-left: 15px;
 }
 
-/* .wrap .main-banner #main-banner-box .main-banner-img,
-.wrap .main-banner #main-banner-box2 .main-banner-img,
-.wrap .main-banner #main-banner-box3 .main-banner-img {
-    padding: 80px 30px;
-} */
-
 /* 베스트셀러 section */
 .wrap .best-book {
     width: 375px;
-    margin-top: 450px;
+    padding-top: 150px;
     /* outline: 1px solid blue; */
 }
 
@@ -487,7 +482,8 @@ a {
 
 /* ----------footer---------- */
 footer {
-    width: 375px;
+    max-width: 100vw;
+    width: 100%;
     height: 306px;
     background-color: #3d3842;
     justify-content: center;

@@ -53,31 +53,24 @@ a {
     z-index: 999;
 }
 
+.wrap .header-container .gnb {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrap .header-container .gnb .site-map {
+    margin-right: 20px;
+    padding-top: 30px;
+}
+
 .wrap .header-container .gnb .menu .depth1 {
     display: flex;
     text-align: center;
     padding-top: 30px;
-    position: absolute;
-    left: 400px;
-    top: 3px;
     white-space: nowrap;
 }
 
-/* .wrap .header-container .gnb .menu .depth1 li:nth-child(1) {
-    margin-right: 50px;
-}
-
-.wrap .header-container .gnb .menu .depth1 li:nth-child(2) {
-    margin-right: 50px;
-} */
-
-
 /* 사이트맵 */
-.wrap .header-container .gnb .site-map {
-    position: absolute;
-    right: 20px;
-    top: 35px;
-}
 
 .wrap .header-container .gnb .menu .depth1 li a {
     color: #000;
@@ -655,13 +648,3 @@ footer .sns-icon {
         height: 400px;
         box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
       }
-      
-    /*   .wrap .best-book .swiper-pagination {
-        margin-top: 20px;
-      } */
-      /* 슬라이더 버튼 높이 */
-    /*   .swiper-button-prev, .swiper-button-next {
-        margin-top: 20px;
-      }
-    */
-      
